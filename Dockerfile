@@ -2,7 +2,7 @@ FROM luxknight007/centos:7
 
 MAINTAINER Zoilo Dela Cruz <luxknight007@gmail.com>
 
-ENV NODEJS node-v6.9.4-linux-x64.tar.xz
+ENV NODEJS node-v7.5.0-linux-x64.tar.xz
 
 COPY $NODEJS /tmp
 
@@ -30,8 +30,5 @@ RUN gem install sass
 
 USER node
 WORKDIR /home/node
-
-#COMMANDS
-# docker run -it --rm --name my-running-script -v "$PWD":/usr/src/app -w /usr/src/app luxknight007/node:latest bower init --allow-root
 
 CMD [ "node" ]
