@@ -13,7 +13,8 @@ RUN tar -xJf /tmp/$NODEJS -C /usr/local --strip-components=1 \
   && rm /tmp/$NODEJS \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
-RUN npm install -g bower
+RUN npm install -g bower \
+	 && npm install -g gulp
 
 # Required library for node and bower
 RUN yum -y install git \

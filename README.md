@@ -1,3 +1,7 @@
+Docker Nodejs
+
+This images contain node, npm, bower gulp and design for development of MEAN Stack application
+
 #Build from docker file
 docker build -t luxknight007/node:latest .
 
